@@ -1,0 +1,116 @@
+/*-----Header-----*/
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    border: 1px solid #e3e3e3;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    color: #9c9c9c;
+    top: 0;
+    left: 0;
+
+
+}
+
+header ul {
+    display: flex;
+
+}
+
+.top_bar li {
+    list-style: none;
+
+}
+
+.top_bar li a {
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
+.top_bar button {
+    display: flex;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: #9c9c9c;
+    border: none;
+    border-left: 1px solid #ccc;
+
+
+
+}
+
+.btn-wallet {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+    //border-left: 1px solid #e3e3e3;
+    //border: none;
+    align-items: center;
+}
+
+.icon-amount {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn-notification {
+    padding-left: 21px;
+    padding-right: 22px;
+    font-size: 18px;
+    position: relative;
+    padding-top: 6px;
+    //border: none;
+
+}
+
+.dot-notification {
+    width: 8px;
+    height: 8px;
+    right: 20px;
+    top: 16px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #f58220;
+
+}
+
+.btn-profile {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #9c9c9c;
+
+    //border: none;
+}
+
+.icon-profile {
+    padding-right: 7px;
+    font-size: 17px;
+
+}
+
+.icon-profile a {
+    text-decoration: none;
+    color: #9c9c9c;
+
+
+}
+
+button {
+    height: 100%;
+}
+
+.btn-quit {
+    padding-left: 23px;
+    padding-right: 18px;
+    font-size: 21px;
+    padding-top: 3px;
+    //border: none;
+
+}

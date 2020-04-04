@@ -1,0 +1,102 @@
+main {
+    width: calc(100% - 188px);
+    margin-left: 188px;
+    margin-top: 80px;
+}
+
+.page {
+    width: 100%;
+    max-width: 1056px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0 20px 20px 20px;
+
+}
+
+
+.section-header {
+    display: flex;
+    height: 48px;
+    border-bottom: 1px solid #e3e3e3;
+    margin-top: 22px;
+    align-items: center;
+
+}
+
+.section-header h4 {
+    text-transform: uppercase;
+    padding-left: 18px;
+    color: #a6a6a6;
+}
+
+.period-form {
+    display: flex;
+    height: 110px;
+    border-bottom: 1px solid #e3e3e3;
+    justify-content: center;
+}
+
+.period-form-container {
+    display: flex;
+    width: 325px;
+    height: 40px;
+    align-self: center;
+    border: 2px solid #a6a6a6;
+}
+
+.icon-calendar {
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+
+.btn-refresh {
+    display: flex;
+    background-color: #f58220;
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    margin-top: 34px;
+    outline: none;
+    margin-left: 10px;
+    ;
+}
+
+.icon-refresh {
+    padding-left: 13px;
+    padding-top: 4px;
+    color: white;
+}
+
+.main-statistic-container {
+    margin-top: 45px;
+}
+
+.statistic-container-first {
+    display: flex;
+}
+
+.statistic-container-second {
+    display: flex;
+}
+
+.chart-container {
+    margin-top: 45px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.chart-header {
+    color: #a6a6a6;
+    margin-left: 70px;
+    font-size: 18px;
+}
+
+.chart-graphic-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
