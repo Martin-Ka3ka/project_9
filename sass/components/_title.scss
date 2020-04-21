@@ -1,0 +1,12 @@
+.title {
+    border-bottom: 2px solid $border_color;
+    margin-top: 22px;
+    padding: 16px 0;
+    font-family: $main_font;
+
+    h4 {
+        text-transform: uppercase;
+        padding-left: 18px;
+        color: $main_color_letters;
+    }
+}

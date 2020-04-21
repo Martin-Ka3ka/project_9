@@ -1,0 +1,51 @@
+.dates-form {
+    display: flex;
+    padding: 40px 0;
+    border-bottom: 2px solid $border_color;
+    justify-content: center;
+
+    .dates-form-container {
+        display: flex;
+        border: 2px solid $border_color;
+
+        input {
+            font-family: $main_font;
+            color: $main_color_letters;
+            border: none;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 10px 0;
+            padding-left: 10px;
+        }
+
+        .end-period {
+            border-left: 1px solid $border_color;
+        }
+
+        .icon-calendar {
+            padding-right: 12px;
+            padding-top: 12px;
+            color: $main_color_letters;
+        }
+    }
+
+    .btn-refresh {
+        background-color: $main_orange_color;
+        border: none;
+        height: 46px;
+        width: 46px;
+        border-radius: 3px;
+        outline: none;
+        margin-left: 15px;
+        cursor: pointer;
+        transition: .4s;
+
+        .icon-refresh {
+            color: $border_color;
+        }
+
+        &:hover {
+            background-color: rgb(255, 187, 0);
+        }
+    }
+}

@@ -1,116 +1,78 @@
 /*-----Header-----*/
 header {
-    height: 60px;
     width: 100%;
     position: fixed;
-    border: 1px solid #e3e3e3;
-    background-color: white;
+    border-bottom: 1px solid $border_color;
+    background-color: $white_color;
     display: flex;
     justify-content: flex-end;
-    color: #9c9c9c;
     top: 0;
     left: 0;
 
+    .top_bar {
+        display: flex;
+        align-items: center;
 
-}
+        .top_item {
+            display: flex;
+            position: relative;
+            border-left: 1px solid $border_color;
 
-header ul {
-    display: flex;
+            .btn_top {
+                background: none;
+                cursor: pointer;
+                color: $main_color_letters;
+                border: none;
+                height: 60px;
+                padding: 0 22px;
+                align-items: center;
+                justify-content: center;
+                font-family: $main_font;
+                transition: .3s;
+                display: block;
 
-}
+                &:hover {
+                    background-color: $background_gray;
+                }
 
-.top_bar li {
-    list-style: none;
+                .icon-wallet {
+                    font-size: 17px;
+                }
 
-}
+                .icon-amount {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin: 0 12px;
+                }
 
-.top_bar li a {
-    text-decoration: none;
-    color: #9c9c9c;
-}
+                .icon-notification {
+                    font-size: 18px;
+                }
 
-.top_bar button {
-    display: flex;
-    background: none;
-    outline: none;
-    cursor: pointer;
-    color: #9c9c9c;
-    border: none;
-    border-left: 1px solid #ccc;
+                .dot-notification {
+                    width: 9px;
+                    height: 9px;
+                    right: 20px;
+                    top: 16px;
+                    border-radius: 50%;
+                    position: absolute;
+                    background-color: $main_orange_color;
+                }
 
+                .icon-profile {
+                    font-size: 16px;
+                    padding-right: 14px;
+                }
 
+                .icon-name {
+                    font-size: 15px;
+                    line-height: 60px;
+                }
 
-}
-
-.btn-wallet {
-    display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    //border-left: 1px solid #e3e3e3;
-    //border: none;
-    align-items: center;
-}
-
-.icon-amount {
-    padding-right: 15px;
-    padding-left: 15px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.btn-notification {
-    padding-left: 21px;
-    padding-right: 22px;
-    font-size: 18px;
-    position: relative;
-    padding-top: 6px;
-    //border: none;
-
-}
-
-.dot-notification {
-    width: 8px;
-    height: 8px;
-    right: 20px;
-    top: 16px;
-    border-radius: 50%;
-    position: absolute;
-    background-color: #f58220;
-
-}
-
-.btn-profile {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #9c9c9c;
-
-    //border: none;
-}
-
-.icon-profile {
-    padding-right: 7px;
-    font-size: 17px;
-
-}
-
-.icon-profile a {
-    text-decoration: none;
-    color: #9c9c9c;
-
-
-}
-
-button {
-    height: 100%;
-}
-
-.btn-quit {
-    padding-left: 23px;
-    padding-right: 18px;
-    font-size: 21px;
-    padding-top: 3px;
-    //border: none;
-
+                .icon-quit {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
 }

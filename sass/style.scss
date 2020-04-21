@@ -1,4 +1,12 @@
-@import 'base';
+@import 'variables';
+@import 'normalize';
+@import 'mixins';
+@import 'layout';
+@import 'glyphter';
+@import 'sections/dates';
+@import 'components/buttons';
+@import 'components/title';
 @import 'components/header';
-@import 'components/main';
 @import 'components/sidebar';
+@import 'components/tables';
+@import 'components/general';

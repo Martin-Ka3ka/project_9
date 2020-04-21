@@ -15,27 +15,27 @@
     <!-- HEADER -->
     <header>
         <ul class="top_bar">
-            <li>
-                <button class="btn-wallet">
+            <li class=top_item>
+                <button class="btn_top">
                     <span class="icon-wallet"></span>
                     <span class="icon-amount">$1,500.00</span>
                     <span class="icon-arrow-down-small"></span>
                 </button>
             </li>
-            <li>
-                <button class="btn-notification">
+            <li class=top_item>
+                <button class="btn_top">
                     <span class="icon-notification"></span>
-                    <div class="dot-notification"></div>
+                    <span class="dot-notification"></span>
                 </button>
             </li>
-            <li>
-                <button class="btn-profile">
+            <li class="top_item">
+                <button class="btn_top">
                     <span class="icon-profile"></span>
-                    <a href="#">Leonardo Dicaprio</a>
+                    <span class="icon-name">Leonardo Dicaprio</span>
                 </button>
             </li>
-            <li>
-                <button class="btn-quit">
+            <li class="top_item">
+                <button class="btn_top">
                     <span class="icon-quit"></span>
                 </button>
             </li>
@@ -61,7 +61,7 @@
                 <div class="sidebar-manager">
                     <div class="header-manager">your manager</div>
                     <div class="manager-photo">
-                        <img src="images/manager-photo.png">
+                        <img src="images/manager-photo.png" alt="manager">
                         <div class="manager-name">Mikhael E.</div>
                     </div>
                 </div>
@@ -72,13 +72,14 @@
 
 
     <!-- MAIN CONTAINER--->
-    <main>
-        <section class=" page">
-            <div class="section-header">
+    <!-- General---->
+    <main class="main">
+        <section class="page general">
+            <div class="title">
                 <h4>general statistic</h4>
             </div>
-            <form class="period-form">
-                <div class="period-form-container">
+            <form class="dates-form">
+                <div class="dates-form-container">
                     <input class="start-period" type="date" name="startData">
                     <input class="end-period" type="date" name="endData">
                     <span class="icon-calendar"></span>
@@ -87,36 +88,167 @@
                     <span class="icon-refresh"></span>
                 </button>
             </form>
-            <div class="main-statistic-container">
-                <div class="statistic-container-first">
-                    <div>
-                        <h2>Visit signups</h2><span>124</span>
+            <div class="general_statistic container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="general_text">Visit Signups
+                            <span class="general_nr">124</span>
+                        </p>
+                        <p class="general_text">FTD
+                            <span class="general_nr">445</span>
+                        </p>
                     </div>
-                    <div>
-                        <h2>Net deposit</h2><span>564</span>
-                    </div>
-                </div>
-                <div class="statistic-container-second">
-                    <div>
-                        <h2>FTD</h2><span>445</span>
-                    </div>
-                    <div>
-                        <h2>Turn over</h2><span>432</span>
+                    <div class="col-md-6">
+                        <p class="general_text">Net deposit
+                            <span class="general_nr">564</span>
+                        </p>
+                        <p class="general_text">Turn over
+                            <span class="general_nr">432</span>
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="chart-container">
-                <div class="chart-header">
+            <div class="chart container">
+                <div class="chart_header">
                     <h4>Earnings chart</h4>
                 </div>
-                <div class="chart-graphic-container">
-                    <div class="chart-graphic">
-                        <canvas id="myChart"></canvas>
-
-                    </div>
+                <div class="chart_graphic">
+                    <canvas id="myChart"></canvas>
                 </div>
             </div>
-
+        </section>
+        <section class="page links">
+            <div class="title">
+                <h4>links</h4>
+            </div>
+            <button class="btn_add">+ add new</button>
+            <div class="scroll-wrapper">
+                <table class="links_table container">
+                    <tbody class="links_tbody">
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Home page</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.homepage.com">htpp://www.homepage.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Currently offer</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.currently.com">htpp://www.currently.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Blurpix</span>
+                            </td>
+                            <td class=" links_line">
+                                <a href="htpp://www.blurpix.com">htpp://www.blurpix.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Your Site</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.yoursite.com">htpp://www.yoursite.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Google</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.google.com">htpp://www.google.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Facebook</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.facebook.com">htpp://www.facebook.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Dashboard</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.dashboard.com">htpp://www.dashboard.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Blurax</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.blurax.com">htpp://www.blurax.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Piece of Wine</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.pieceofwine.com">htpp://www.pieceofwine.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr class="links_row">
+                            <td class="links_line">
+                                <span>Twitter</span>
+                            </td>
+                            <td class="links_line">
+                                <a href="htpp://www.twitter.com">htpp://www.twitter.com</a>
+                            </td>
+                            <td class="links_line">
+                                <a href="#"><i class="icon-links"></i></a>
+                                <a href="#"><i class="icon-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button class="btn_add">+ add new</button>
         </section>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
